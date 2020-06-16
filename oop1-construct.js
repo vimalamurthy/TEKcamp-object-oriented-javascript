@@ -158,7 +158,7 @@ console.log(circle.calcArea());
 console.log(circle.calcPerimeter());
 
 //Bonus
-//pentagon takes in radius as parameter to calc area
+//pentagon takes in side as parameter to calc area
 const pentagon = new Shape('pentagon', 5, 8, null);
 console.log(pentagon.calcArea());
 console.log(pentagon.calcPerimeter());
