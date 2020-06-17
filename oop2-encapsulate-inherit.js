@@ -11,7 +11,6 @@
     on the classes, without directly manipulating the values themselves. 
 
     //your code here... */
-
 class Book {
   #author;
   #publisher;
@@ -19,14 +18,14 @@ class Book {
   get author() {
     return `${this.#author}`;
   }
-  set writer(str) {
+  set author(str) {
     if (str === '') throw new Error('Empty String..');
     this.#author = str;
   }
   get publisher() {
     return `${this.#publisher}`;
   }
-  set publishr(str) {
+  set publisher(str) {
     if (str === '') throw new Error('Empty String..');
     this.#publisher = str;
   }
@@ -34,9 +33,9 @@ class Book {
 
 const newBook = new Book();
 
-newBook.writer = 'Vamsi';
+newBook.author = 'Vamsi';
 console.log(newBook.author);
-newBook.publishr = 'Radhika';
+newBook.publisher = 'Radhika';
 console.log(newBook.publisher);
 
 class Author {
@@ -46,23 +45,23 @@ class Author {
   get name() {
     return `${this.#name}`;
   }
-  set names(str) {
+  set name(str) {
     if (str === '') throw new Error('Empty String..');
     this.#name = str;
   }
   get books() {
     return `${this.#books}`;
   }
-  set book(str) {
+  set books(str) {
     if (str === '') throw new Error('Empty String..');
     this.#books = str;
   }
 }
 const newAuthor = new Author();
 
-newAuthor.names = 'Nive';
+newAuthor.name = 'Nive';
 console.log(newAuthor.name);
-newAuthor.book = 'Sewing 101';
+newAuthor.books = 'Sewing 101';
 console.log(newAuthor.books);
 
 class Publisher {
@@ -72,14 +71,14 @@ class Publisher {
   get authors() {
     return `${this.#authors}`;
   }
-  set writers(str) {
+  set authors(str) {
     if (str === '') throw new Error('Empty String..');
     this.#authors = str;
   }
   get books() {
     return `${this.#books}`;
   }
-  set books1(str) {
+  set books(str) {
     if (str === '') throw new Error('Empty String..');
     this.#books = str;
   }
@@ -87,9 +86,9 @@ class Publisher {
 
 const newPublisher = new Publisher();
 
-newPublisher.writers = 'Meethu';
+newPublisher.authors = 'Meethu';
 console.log(newPublisher.authors);
-newPublisher.books1 = 'Pathipagam';
+newPublisher.books = 'Pathipagam';
 console.log(newPublisher.books);
 
 class Review {
@@ -99,14 +98,14 @@ class Review {
   get rating() {
     return `${this.#rating}`;
   }
-  set rate(num) {
+  set rating(num) {
     if (num === '') throw new Error('Empty String..');
     this.#rating = num;
   }
   get user() {
     return `${this.#user}`;
   }
-  set usr(str) {
+  set user(str) {
     if (str === '') throw new Error('Empty String..');
     this.#user = str;
   }
@@ -114,9 +113,9 @@ class Review {
 
 const newReview = new Review();
 
-newReview.usr = 'Van';
+newReview.user = 'Van';
 console.log(newReview.user);
-newReview.rate = 10;
+newReview.rating = 10;
 console.log(newReview.rating);
 
 /* 2. Create the following classes:
